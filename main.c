@@ -1,0 +1,39 @@
+/*
+COUNTY LIBRARY MANAGEMENT SYSTEM
+BY Alexander Wambugu
+Last Updated on 15/02/2022
+MIT LISENCE
+C99 COMPILER
+*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //Variable declaration
+    char name[100];
+    int n1,n2,sum,product,diff;
+    float quot;
+    printf("Simple calculator!/n");
+
+    //input
+    printf("Enter your name:");
+    gets(name);
+    printf("Enter two integers:");
+    scanf("%d%d",&n1,&n2);
+
+    sum = n1 + n2;
+    diff = n1 - n2;
+    product = n1 * n2;
+    quot = (float)n1/n2;
+
+    //output
+    printf("Hey %s,here are the results:\n",name);
+    printf("%d+%d=%d\n",n1,n2,sum),
+    printf("%d-%d=%d\n",n1,n2,diff);
+    printf("%d*%d=%d\n",n1,n2,product);
+    printf("%d/%d=%f\n",n1,n2,quot);
+    return 0;
+}
